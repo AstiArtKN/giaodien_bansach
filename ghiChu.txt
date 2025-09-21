@@ -1,0 +1,58 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cột */
+  grid-template-rows: repeat(2, 100px);  /* 2 hàng */
+  gap: 10px;
+}
+
+.box1 {
+  background: lightcoral;
+  grid-area: 1 / 1 / 2 / 3; /* từ hàng 1, cột 1 → hàng 2, cột 3 (chiếm 2 cột) */
+}
+
+.box2 {
+  background: lightblue;
+  grid-area: 2 / 1 / 3 / 2; /* ở hàng 2, cột 1 */
+}
+
+.box3 {
+  background: lightgreen;
+  grid-area: 2 / 2 / 3 / 4; /* hàng 2, cột 2 → cột 4 (chiếm 2 cột) */
+}
+
+/*================ SPAN ==============================*/
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* 3 cột */
+  grid-template-rows: auto auto;     /* 2 hàng */
+  gap: 20px;
+}
+
+/* Item 1 chiếm 2 hàng (chiều cao gấp đôi) */
+.item1 {
+  grid-row: span 2;
+  background-color: #35c5c5;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+/* Item 4 cũng chiếm 2 hàng */
+.item4 {
+  grid-row: span 2;
+  background-color: #fcd6f5;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+/* Các item còn lại chỉ chiếm 1 hàng */
+.item2 {
+  background-color: #ffa726;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.item3 {
+  background-color: #f48fb1;
+  padding: 20px;
+  border-radius: 12px;
+}
