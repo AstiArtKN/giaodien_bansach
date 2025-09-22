@@ -728,7 +728,39 @@
                   class="team-item__img"
                 />
               </figure>
-              <h3 class="team-item__name">Khiêm Nguyễn</h3>
+              <h3 class="team-item__name line-2 line-clamp">
+                Thanh Gươm Diệt Quỷ Vol.1 - Bản đặc biệt
+              </h3>
+              <p class="service-detail-item__desc line-clamp line-2">
+                Giá: <span>45.000đ</span>
+              </p>
+              <div class="service-detail-item__acction newbooks-wrapper">
+                <!-- Form thêm vào giỏ hàng -->
+                <form action="" method="POST">
+                  <input type="hidden" name="product_id" value="php" />
+                  <input type="hidden" name="quantity" value="1" />
+                  <button
+                    type="submit"
+                    name="add_to_cart"
+                    class="service-detail-item__acction--add add-to"
+                  >
+                    Thêm vào giỏ
+                  </button>
+                </form>
+
+                <!-- Form mua ngay -->
+                <form action="checkout.php" method="POST">
+                  <input type="hidden" name="product_id" value="php" />
+                  <input type="hidden" name="quantity" value="1" />
+                  <button
+                    type="submit"
+                    name="buy_now"
+                    class="service-detail-item__acction--buy buy-now"
+                  >
+                    Mua ngay
+                  </button>
+                </form>
+              </div>
             </article>
 
             <!-- item 2 -->

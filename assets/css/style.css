@@ -68,7 +68,7 @@ a {
   overflow: hidden;
 }
 .line-clamp.line-2 {
-  --line-clamp: 6;
+  --line-clamp: 2;
 }
 .break-all {
   word-break: break-all;
@@ -82,14 +82,14 @@ a {
 .add-to {
   color: #fff;
   background: var(--color--heading);
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 600;
   border: transparent;
 }
 .buy-now {
   color: #fff;
   background: var(--color--price);
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 600;
   border: transparent;
 }
@@ -161,7 +161,7 @@ a {
   height: auto;
   object-fit: cover;
   position: absolute;
-  top: 371px;
+  top: 22%;
 }
 
 .hero__content {
@@ -597,9 +597,9 @@ a {
   column-gap: 20px;
 }
 .team-item {
-  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
   border-radius: 15px;
-  padding: 20px;
+  padding: 10px;
 }
 .team-item__img {
   width: 100%;
@@ -610,8 +610,15 @@ a {
   margin-top: 20px;
   text-align: center;
   color: #311852ff;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
+  line-height: 1.2;
   font-weight: 400;
+}
+
+.newbooks-wrapper {
+  display: flex;
+  justify-content: center;
+  column-gap: 5px;
 }
 
 /* =============================== rate ===================================== */
