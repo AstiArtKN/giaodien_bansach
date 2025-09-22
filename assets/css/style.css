@@ -32,7 +32,7 @@ a {
   margin: 0 auto;
 }
 .container-slider {
-  width: 1500px;
+  width: 1170px;
   max-width: calc(100% - 20px);
   margin: 0 auto;
 }
@@ -108,6 +108,7 @@ a {
 }
 .navbar__list {
   display: flex;
+  align-items: center;
 }
 .navbar__link {
   padding: 16px 32px;
@@ -143,7 +144,27 @@ a {
   right: 8px;
   top: 8px;
 }
+.header-search__btn {
+  width: 100px;
+  border-radius: 6px;
 
+  line-height: normal;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  font-weight: 600;
+  background: var(--color--heading);
+  border: transparent;
+}
+.header-search__input {
+  border-radius: 8px;
+  min-height: 30px;
+  border: solid 1px var(--color--heading);
+}
+.header-search__input:focus {
+  outline: none;
+  border-radius: 8px;
+  border: solid 1px var(--color--heading);
+}
 /* =============================== hero ===================================== */
 .hero {
   background: #4dc27e;
