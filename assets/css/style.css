@@ -848,3 +848,59 @@ a {
     transform: rotate(15deg) scale(1);
   }
 }
+
+/* =============================== BOOKDETAIL ======================================= */
+/* =============================== BOOKDETAIL ======================================= */
+/* =============================== BOOKDETAIL ======================================= */
+/* =============================== BOOKDETAIL ======================================= */
+.book-detail {
+  margin-top: 40px;
+}
+.book-detail-wrapper {
+  display: flex;
+  column-gap: 40px;
+}
+.book-detail__img {
+  width: 400px;
+  object-fit: cover;
+}
+.book-detail-right__name {
+  font-size: 2.8rem;
+  font-weight: 500;
+}
+.book-detail-right__price {
+  margin-top: 20px;
+  font-size: 2.5rem;
+  color: var(--color--heading);
+  font-weight: 500;
+}
+
+.book-detail-right__lylich {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 10px;
+}
+
+.book-detail-right__lylich--content strong,
+.book-detail-right__mota--title {
+  margin-right: 20px;
+  font-weight: 600;
+}
+.book-detail-right__mota {
+  margin-top: 20px;
+}
+
+.book-detail-right__mota--noidung {
+  margin-top: 10px;
+  line-height: 1.7;
+}
+
+.book-detail-chitiet {
+  margin-top: 40px;
+}
+
+.book-detail-chitiet--title {
+  font-size: 2.1rem;
+  font-weight: 600;
+}
