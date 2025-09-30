@@ -860,9 +860,25 @@ a {
   display: flex;
   column-gap: 40px;
 }
+.book-detail_left {
+  padding: 20px;
+  width: 40%;
+}
+.book-detail_right {
+  padding: 20px;
+  width: 60%;
+}
+.book-detail__img--wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  border: solid 2px var(--color--heading);
+}
 .book-detail__img {
   width: 400px;
   object-fit: cover;
+  display: block;
 }
 .book-detail-right__name {
   font-size: 2.8rem;
@@ -879,7 +895,7 @@ a {
   margin-top: 20px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  row-gap: 10px;
+  row-gap: 30px;
 }
 
 .book-detail-right__lylich--content strong,
@@ -888,7 +904,7 @@ a {
   font-weight: 600;
 }
 .book-detail-right__mota {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .book-detail-right__mota--noidung {
@@ -903,4 +919,29 @@ a {
 .book-detail-chitiet--title {
   font-size: 2.1rem;
   font-weight: 600;
+}
+
+.chitiet-content {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+}
+.chitiet-content:first-child {
+  margin-top: 40px;
+}
+.chitiet-content strong {
+  min-width: 115px;
+  display: inline-block;
+}
+
+.book-detail__action {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn-db-add,
+.btn-db-buy {
+  border-radius: 6px;
 }
